@@ -43,3 +43,8 @@ const clickEvent = () => {
   range.insertNode(mark);
 };
 ```
+
+# 參考
+
+- [Selection - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Selection)
+- [javascript - How to check if selected text in html already has a class? - Stack Overflow](https://stackoverflow.com/questions/45909416/how-to-check-if-selected-text-in-html-already-has-a-class)
