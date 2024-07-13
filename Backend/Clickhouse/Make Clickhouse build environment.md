@@ -6,6 +6,7 @@ this note using Ubuntu22.04 os
 
 - [Make Clickhouse build environment](#make-clickhouse-build-environment)
   - [Index](#index)
+  - [install build-essential](#install-build-essential)
   - [install clang](#install-clang)
   - [install lld](#install-lld)
   - [install pthread](#install-pthread)
@@ -13,12 +14,17 @@ this note using Ubuntu22.04 os
   - [install nasm](#install-nasm)
   - [install yasm](#install-yasm)
 
+## install build-essential
+
+- `sudo apt update && sudo apt install build-essential`
+
 ## install clang
 
 - download install script by `wget https://apt.llvm.org/llvm.sh`
 - add executable permission `chmod u+x llvm.sh`
 - install using `sudo ./llvm.sh 17`
 - verify install `clang-17 --version`
+- add `-DCMAKE_C_COMPILER=clang-17` and `-DCMAKE_CXX_COMPILER=clang-17` in cmake build option
 
 ## install lld
 
