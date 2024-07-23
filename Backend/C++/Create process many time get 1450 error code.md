@@ -9,3 +9,6 @@ Keeping handle references will block the system from releasing resources.
 ## Reference
 
 - [Terminating a Process - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/procthread/terminating-a-process)
+- [TerminateProcess function (processthreadsapi.h) - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess)
+- [CreateProcessA function (processthreadsapi.h) - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa)
+- [CloseHandle function (handleapi.h) - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/api/handleapi/nf-handleapi-closehandle)
