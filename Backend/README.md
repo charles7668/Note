@@ -1,6 +1,8 @@
 # 目錄
 
 - [JWT](./JWT/JWT.md)
+- C++
+  - [Debug C++ Program with sudo gdb](./C++/vscode%20with%20sudo%20dbg.md)
 - C#
   - [MAUI 問題記錄](./C%23/MAUI%20Q&A.md)
   - [HttpClient 問題記錄](./C%23/HttpClient問題記錄.md)
