@@ -13,6 +13,7 @@ this note using Ubuntu22.04 os
     - [Reference](#reference)
   - [install nasm](#install-nasm)
   - [install yasm](#install-yasm)
+  - [disable cache](#disable-cache)
 
 ## install build-essential
 
@@ -35,12 +36,12 @@ this note using Ubuntu22.04 os
 - `sudo apt update && sudo apt-get install libpthread-stubs0-dev`
 - set following setting in CMakelist.txt or using `-D` in command line
 
-  ```cmake
-  set(CMAKE_THREAD_LIBS_INIT "-lpthread")
-  set(CMAKE_HAVE_THREADS_LIBRARY 1)
-  set(CMAKE_USE_WIN32_THREADS_INIT 0)
-  set(CMAKE_USE_PTHREADS_INIT 1)
-  set(THREADS_PREFER_PTHREAD_FLAG ON)
+  ```bash
+  -DCMAKE_THREAD_LIBS_INIT="-lpthread"
+  -DCMAKE_HAVE_THREADS_LIBRARY=1
+  -DCMAKE_USE_WIN32_THREADS_INIT=0
+  -DCMAKE_USE_PTHREADS_INIT=1
+  -DTHREADS_PREFER_PTHREAD_FLAG=ON
   ```
 
 ### Reference
@@ -54,3 +55,7 @@ this note using Ubuntu22.04 os
 ## install yasm
 
 - `sudo apt update && sudo apt install yasm`
+
+## disable cache
+
+- `-DCOMPILER_CACHE=disabled`
