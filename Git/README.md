@@ -1,3 +1,3 @@
-# 目錄
+# Index
 
-- [建立只有本地可使用的 igonre](./建立本地的%20ignore%20,%20而非%20.gitignore/REAEME.md)
+- [Ignore Local File Changes](./Ignore%20local%20file%20change.md)
