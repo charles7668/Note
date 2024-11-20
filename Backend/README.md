@@ -16,3 +16,5 @@
   - [Make Clickhouse build environment](./Clickhouse/Make%20Clickhouse%20build%20environment.md)
 - Database
   - [Postgres docker-compose template](./Database/Postgres%20docker-compose%20template.md)
+- [Authentik](./Authentik/README.md)
+  - [Build Guide](./Authentik/Build%20Guide.md)
