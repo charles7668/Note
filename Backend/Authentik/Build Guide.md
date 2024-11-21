@@ -18,9 +18,9 @@ this build environment is create using ubuntu in docker
   - Add following text to `~/.bashrc`
 
     ```shell
-    export PYENV_ROOT="$HOME/.pyenv"
-    [[ -d $PYENV_ROOT/bin ]] && export  PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+    echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(pyenv init -)"' >> ~/.bashrc
     ```
 
   - refresh `~/.bashrc` by `source ~/.bashrc`
@@ -39,9 +39,9 @@ this build environment is create using ubuntu in docker
   - Add following script to `~/.bashrc`
 
     ```shell
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+    echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bashrc
+    echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> ~/.bashrc
+    echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion' >> ~/.bashrc
     ```
 
   - `source ~/.bashrc`
@@ -55,7 +55,7 @@ this build environment is create using ubuntu in docker
   - `wget https://go.dev/dl/go1.23.3.linux-amd64.tar.gz`
   - `rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.3.linux-amd64.tar.gz`
 - Install other dependencies
-  - `apt install libkrb5-dev libpq-dev`
+  - `apt install libkrb5-dev libpq-dev -y`
 - Install `postgresql` , this is optional
 
   - `apt install -y postgresql postgresql-contrib`
