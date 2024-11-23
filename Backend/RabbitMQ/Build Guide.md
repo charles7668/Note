@@ -42,22 +42,29 @@
 
   - install using following commands
 
-  ```bash
-  CURRENT_DIR=$(pwd)
-  git clone https://github.com/robisonsantos/evm /tmp/evm/
-  cd /tmp/evm/
-  /tmp/evm/install
-  echo 'source ~/.evm/scripts/evm' >> ~/.bashrc
-  source ~/.bashrc
-  cd "$CURRENT_DIR"
-  ```
+    ```bash
+    CURRENT_DIR=$(pwd)
+    git clone https://github.com/robisonsantos/evm /tmp/evm/
+    cd /tmp/evm/
+    /tmp/evm/install
+    echo 'source ~/.evm/scripts/evm' >> ~/.bashrc
+    source ~/.bashrc
+    cd "$CURRENT_DIR"
+    ```
 
 - Install Erlang using evm
+  - before use install , make sure unzip is installed
 
-  ```bash
-  evm install 26.2 -y
-  evm default 26.2
-  ```
+    ```bash
+    sudo apt isntall unzip -y
+    ```
+
+  - Install erlang using evm
+
+    ```bash
+    evm install 26.2 -y
+    evm default 26.2
+    ```
 
 - Install erlang-nox , erlang-dev
 
@@ -70,15 +77,11 @@
   ```bash
   curl -fsSO https://elixir-lang.org/install.sh
 
-  sh install.sh elixir@1.17.3 otp@27.1.2
+  sh install.sh elixir@1.17.3 otp@26.2
   installs_dir=$HOME/.elixir-install/installs
-  export PATH=$installs_dir/otp/27.1.2/bin:$PATH
-  export PATH=$installs_dir/elixir/1.17.3-otp-27/bin:$PATH
-  iex
-  ```
-
-  ```bash
-  sudo apt update && sudo apt install -y elixir
+  echo 'export PATH=$installs_dir/otp/27.1.2/bin:$PATH' >> ~/.bashrc
+  echo 'export PATH=$installs_dir/elixir/1.17.3-otp-27/bin:$PATH' >> ~/.bashrc
+  source ~/.bashrc
   ```
 
 - Install xsltproc and xmlto
