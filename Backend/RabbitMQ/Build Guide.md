@@ -56,7 +56,7 @@
   - before use install , make sure unzip is installed
 
     ```bash
-    sudo apt isntall unzip -y
+    sudo apt install zip unzip -y
     ```
 
   - Install erlang using evm
@@ -78,9 +78,8 @@
   curl -fsSO https://elixir-lang.org/install.sh
 
   sh install.sh elixir@1.17.3 otp@26.2
-  installs_dir=$HOME/.elixir-install/installs
-  echo 'export PATH=$installs_dir/otp/27.1.2/bin:$PATH' >> ~/.bashrc
-  echo 'export PATH=$installs_dir/elixir/1.17.3-otp-27/bin:$PATH' >> ~/.bashrc
+  echo 'export PATH=$HOME/.elixir-install/installs/otp/26.2/bin:$PATH' >> ~/.bashrc
+  echo 'export PATH=$HOME/.elixir-install/installs/elixir/1.17.3-otp-26/bin:$PATH' >> ~/.bashrc
   source ~/.bashrc
   ```
 
