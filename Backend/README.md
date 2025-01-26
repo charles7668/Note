@@ -18,3 +18,5 @@
   - [Postgres docker-compose template](./Database/Postgres%20docker-compose%20template.md)
 - [Authentik](./Authentik/README.md)
   - [Build Guide](./Authentik/Build%20Guide.md)
+- [ffmpeg]
+  - [script templates](./ffmpeg/script%20templates.md)
